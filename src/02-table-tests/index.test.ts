@@ -14,7 +14,7 @@ const testCases = [
 describe('simpleCalculator', () => {
   test.each(testCases)(
     'should return results which are expected in each case',
-    ({ expected, a, action, b }) => {
+    ({ a, b, action, expected }) => {
       const result = simpleCalculator({ a, b, action });
       expect(result).toBe(expected);
     },
